@@ -17,7 +17,13 @@ export const createElement = (tag, attributes = {}, ...children) => {
 
   if (children && children.length > 0) {
     for (const child of children) {
-      element.append(child);
+      if (Array.isArray(child)) {
+        throw Error(
+          "Don't use array in children parameter. Use spread operator"
+        );
+      } else {
+        element.append(child);
+      }
     }
   }
 
