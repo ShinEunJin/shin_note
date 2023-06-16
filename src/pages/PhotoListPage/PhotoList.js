@@ -1,5 +1,6 @@
 import Component from "../../components/Component.js";
 import { createElement } from "../../utils/functions/createElement.js";
+import { routeChange } from "../../router/router.js";
 
 class PhotoList extends Component {
   render() {
@@ -24,6 +25,15 @@ class PhotoList extends Component {
           )
           .join("")}`;
     }
+
+    $photoList.addEventListener("click", (e) => {
+      const $li = e.target.closest("li");
+      const { photoId } = $li.dataset;
+
+      if (photoId) {
+        routeChange(`/photos/${photoId}`);
+      }
+    });
 
     this.$target.appendChild($photoList);
   }
