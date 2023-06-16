@@ -1,4 +1,4 @@
 import "./global.js";
 import App from "./App.js";
 
-new App({ $target: document.querySelector("#root") });
+new App(document.querySelector("#root"));

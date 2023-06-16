@@ -1,5 +1,5 @@
 class Component {
-  constructor({ $target }) {
+  constructor($target) {
     this.$target = $target;
     this.state = {};
     this.render();

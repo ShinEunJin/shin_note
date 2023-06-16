@@ -19,7 +19,7 @@ export const router = ($target) => {
   if (pathname.startsWith("/") && pathname === "/") Page = PhotoListPage;
   if (pathname.startsWith("/photos/")) Page = PhotoDetailPage;
 
-  new Page({ $target });
+  new Page($target);
 };
 
 export default router;
