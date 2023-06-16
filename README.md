@@ -27,7 +27,7 @@ index.js는 App을 root 노드에 연결하는 역할
 ```
 // index.js
 
-new App({ $target: document.querySelector("#root") });
+new App(document.querySelector("#root"));
 ```
 
 ## 2. **createElement 유틸함수**
@@ -85,7 +85,7 @@ export const router = ($target) => {
   if (pathname.startsWith("/") && pathname === "/") Page = PhotoListPage;
   if (pathname.startsWith("/photos/")) Page = PhotoDetailPage;
 
-  new Page({ $target });
+  new Page($target);
 };
 ```
 
@@ -119,7 +119,7 @@ routeChange 함수를 통해 url을 history에 추가하고
 
 ```
 class App {
-  constructor({ $target }) {
+  constructor($target) {
     window.addEventListener("popstate", () => {
       router($target);
     });
