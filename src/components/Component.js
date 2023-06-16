@@ -1,6 +1,7 @@
 class Component {
-  constructor($target) {
+  constructor($target, props) {
     this.$target = $target;
+    this.props = props;
     this.state = {};
     this.render();
     this.setup();
