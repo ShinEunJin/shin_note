@@ -6,7 +6,7 @@ class PhotoListPage extends Component {
     const title = createElement("h1", null, "사진 목록");
     const $page = createElement("div", { class: "PhotoListPage" }, title);
 
-    this.$target.appendChild($page);
+    this.$target.renderPage($page);
   }
 }
 
