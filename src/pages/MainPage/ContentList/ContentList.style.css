@@ -1,0 +1,22 @@
+.content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 50vw;
+  min-width: 800px;
+  margin: 0 auto;
+}
+
+.content__item {
+  display: flex;
+  align-items: center;
+  width: 49%;
+  height: 8vh;
+  background-color: rgb(245, 239, 239);
+  border-radius: 20px;
+  margin-bottom: 2vh;
+}
+
+.content__item span {
+  padding-left: 1.2rem;
+}

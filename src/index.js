@@ -1,4 +1,4 @@
-import "./global.js";
-import App from "./App.js";
+import App from "./App";
+import "./reset.css";
 
 new App(document.querySelector("#root"));

@@ -1,0 +1,1 @@
+MAIN_BACKGROUND_COLOR = "#fff6f4";

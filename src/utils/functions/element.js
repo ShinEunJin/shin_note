@@ -1,6 +1,6 @@
 export const createElement = (tag, attributes = {}, ...children) => {
-  if (!tag || typeof tag !== "string") {
-    throw Error("tag is required and type must be string.");
+  if (!tag) {
+    throw Error("createElement need tag");
   }
 
   const element = document.createElement(tag);
@@ -15,15 +15,9 @@ export const createElement = (tag, attributes = {}, ...children) => {
     }
   }
 
-  if (children && children.length > 0) {
+  if (children) {
     for (const child of children) {
-      if (Array.isArray(child)) {
-        throw Error(
-          "Don't use array in children parameter. Use spread operator"
-        );
-      } else {
-        element.append(child);
-      }
+      element.append(child);
     }
   }
 
