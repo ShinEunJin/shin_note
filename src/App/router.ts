@@ -1,4 +1,4 @@
-import MainPage from "../pages/MainPage/MainPage";
+import MainPage from "@/pages/MainPage/MainPage";
 
 const router = (url: string, $target: Element) => {
   switch (url) {

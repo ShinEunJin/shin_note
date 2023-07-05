@@ -1,4 +1,4 @@
-import Component from "../components/helpers/Component";
+import Component from "@/components/helpers/Component";
 
 import router from "./router";
 

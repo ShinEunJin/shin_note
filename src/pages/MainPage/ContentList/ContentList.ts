@@ -1,5 +1,5 @@
-import Component from "../../../components/helpers/Component";
-import * as element from "../../../utils/functions/element";
+import Component from "@/components/helpers/Component";
+import * as element from "@/utils/functions/element";
 
 import "./ContentList.style.css";
 
