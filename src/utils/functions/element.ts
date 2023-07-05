@@ -1,4 +1,8 @@
-export const createElement = (tag, attributes = {}, ...children) => {
+export const createElement = (
+  tag: string,
+  attributes: object | null = {},
+  ...children: (Element | string)[]
+): Element => {
   if (!tag) {
     throw Error("createElement need tag");
   }

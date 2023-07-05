@@ -1,5 +1,7 @@
 class Component {
-  constructor($target) {
+  $target: Element;
+
+  constructor($target: Element) {
     this.$target = $target;
     this.render();
     this.mounted();

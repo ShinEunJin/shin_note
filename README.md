@@ -163,3 +163,9 @@ title.addEventListener("click", () => {
 
   App 에서 popstate 감지 후 router () 로 페이지 렌더링
 ```
+
+## 4. **webpack 설정**
+
+### 4-1. typescript 설정
+
+---

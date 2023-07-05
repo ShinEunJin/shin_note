@@ -1,4 +1,4 @@
-import Component from "../../components/helpers/Component";
+import Component from "@/components/helpers/Component";
 import ContentInput from "./ContentInput";
 
 import ContentList from "./ContentList";
